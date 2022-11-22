@@ -32,8 +32,8 @@ class Translator {
         const spellingKeys = Object.keys(spelling);
         const titlesKeys = Object.keys(titles);
 
-        const specialLookbehind = '(?<!((\\w)|(\\<span class\\="highlight">)))(';
-        const specialLookahead = ')(?!((\\w)|(\</span>)))';
+        const specialLookbehind = '(?<!((\\w)|(\\<span class\\="highlight"\\>)))(';
+        const specialLookahead = ')(?!((\\w)|(\\</span>)))';
 
         for (let key of langOnlyKeys) {
             translation = translation.replace(
