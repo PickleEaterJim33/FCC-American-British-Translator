@@ -1,5 +1,4 @@
 const americanOnly = require('./american-only.js');
-const { regularization } = require('./american-to-british-spelling.js');
 const americanToBritishSpelling = require('./american-to-british-spelling.js');
 const americanToBritishTitles = require("./american-to-british-titles.js")
 const britishOnly = require('./british-only.js')
@@ -80,7 +79,7 @@ class Translator {
 
 function swapKeysAndValues(obj) {
     let swap = {};
-    
+
     for (let key in obj) {
         swap[obj[key]] = key;
     }
